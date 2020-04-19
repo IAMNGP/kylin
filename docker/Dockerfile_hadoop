@@ -30,6 +30,7 @@ ENV JAVA_HOME /home/admin/jdk1.8.0_141
 ENV MVN_HOME /home/admin/apache-maven-3.6.1
 ENV HADOOP_HOME /home/admin/hadoop-$HADOOP_VERSION
 ENV HIVE_HOME /home/admin/apache-hive-$HIVE_VERSION-bin
+ENV SQOOP_HOME /home/admin/sqoop-1.4.7.bin__hadoop-2.6.0
 ENV HADOOP_CONF $HADOOP_HOME/etc/hadoop
 ENV HADOOP_CONF_DIR $HADOOP_HOME/etc/hadoop
 ENV HBASE_HOME /home/admin/hbase-$HBASE_VERSION
