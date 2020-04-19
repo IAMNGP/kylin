@@ -64,6 +64,8 @@ $KAFKA_HOME/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replicatio
 nohup $KYLIN_HOME/bin/kylin.sh org.apache.kylin.source.kafka.util.KafkaSampleProducer --topic kylin_streaming_topic --broker localhost:9092 < /dev/null 2>&1 > /tmp/kafka-sample.log &
 # create sample cube
 sh $KYLIN_HOME/bin/sample.sh
+# copy kylin jdbc jar to sqoop lib directory
+cp $KYLIN_HOME/lib/kylin-jdbc* $SQOOP_HOME/lib
 # start kylin
 $KYLIN_HOME/bin/kylin.sh start
 
